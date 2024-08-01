@@ -1,4 +1,4 @@
-package org.saiel.DesignPatterns.Singleton.Singlethreaded;
+package org.saiel.DesignPatterns.Creational.Singleton.Singlethreaded;
 
 public class Singleton {
     private static Singleton instance;

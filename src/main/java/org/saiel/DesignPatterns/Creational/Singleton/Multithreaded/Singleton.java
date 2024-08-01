@@ -1,4 +1,4 @@
-package org.saiel.DesignPatterns.Singleton.Multithreaded;
+package org.saiel.DesignPatterns.Creational.Singleton.Multithreaded;
 
 public class Singleton {
     private static volatile Singleton instance;

@@ -1,4 +1,4 @@
-package org.saiel.DesignPatterns.Singleton.Singlethreaded;
+package org.saiel.DesignPatterns.Creational.Singleton.Singlethreaded;
 
 public class Main {
     public static void main(String[] args) {
