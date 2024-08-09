@@ -1,5 +1,7 @@
 package org.saiel.DesignPatterns.Creational.Prototype;
 
+import java.util.HashMap;
+
 public class Client {
     public static void main(String[] args) {
         StudentRegistry studentRegistry = new StudentRegistry();
@@ -33,16 +35,26 @@ public class Client {
 
         System.out.println(janBatchStudent1.getAvgBatchPsp());
 
+//        instantiate intelligentStudentRegistry
+        IntelligentStudentRegistry intelligentStudentRegistry = new IntelligentStudentRegistry();
         IntelligentStudent scalerStudent = new IntelligentStudent();
-        scalerStudent.setBatchName("Intelligent batch");
-        scalerStudent.setAvgBatchPsp(100);
-        scalerStudent.setYearOfEnrollment(2024);
-        scalerStudent.setIq(100);
-        studentRegistry.save(scalerStudent);
+        scalerStudent.setBatchName("HyperXBatch");
+        scalerStudent.setAvgBatchPsp(99);
+        scalerStudent.setYearOfEnrollment(2023);
+        intelligentStudentRegistry.save(scalerStudent);
 
-        IntelligentStudent scalerStudent1 = (IntelligentStudent) studentRegistry.get("Intelligent batch").clone();
+        IntelligentStudent scalerStudent1 = intelligentStudentRegistry.get("HyperXBatch").clone();
+        scalerStudent1.setIq(150);
+
         System.out.println(scalerStudent1.getIq());
+//        studentRegistry.save(scalerStudent);     create another intelligent_student_registry for intelligent_student
 
+
+
+/*    here, don't add intelligent_student to the student registry because while fetching
+      intelligent_student, it won't know which student to fetch (intelligent_student or student).
+      so, create another intelligentStudentRegistry for the intelligent student and so on.
+*/
 
     }
 }
