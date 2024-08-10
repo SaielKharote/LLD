@@ -1,6 +1,5 @@
 package org.saiel.DesignPatterns.Creational.Prototype;
 
-import java.util.HashMap;
 
 public class Client {
     public static void main(String[] args) {
