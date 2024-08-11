@@ -1,5 +1,6 @@
 
 ### Facade Design Pattern
+https://www.baeldung.com/java-facade-pattern
 ![img.png](img.png)
 #### Here, in Amazon class there are various methods for different operations after order is placed.
 #### We are segregating the relevant methods to the relevant classes so that our codebase doesn't become clumsy.
