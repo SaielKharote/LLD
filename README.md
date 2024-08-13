@@ -13,3 +13,9 @@ https://www.baeldung.com/java-facade-pattern
 
 ##### HTML uses Decorator pattern
 ![img_2.png](img_2.png)
+
+--------------------------------------------------------
+
+### Usecase Diagram
+#### Scaler System
+![Use CaseDiagram.png](UseCaseDiagram.png)
